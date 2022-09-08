@@ -4,3 +4,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
+:root{
+    --white: white;
+    --gray: gray;
+}
+.flex{
+    display: flex;
+}
+.text_style{
+    color: var(--white);
+    background-color: var(--gray);
+}
+
+/* header */
+header .flex{
+    justify-content: flex-end;
+}
+header .text_style{
+    padding: 4px;
+    border-radius: 4px;
+}
+header div.flex div{
+    margin: 15px;
+}
