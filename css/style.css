@@ -114,3 +114,10 @@ footer .command_bar .flex > div.arrow{
     padding-left: 0;
     padding-top: 12px;
 }
+footer .command_bar .flex > div:hover, footer .command_bar .flex > div:hover i.green{
+    color: blue;
+    cursor: pointer;
+}
+footer h5:hover{
+    cursor: pointer;
+}
