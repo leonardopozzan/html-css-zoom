@@ -11,10 +11,23 @@ body{
 :root{
     --white: white;
     --gray: gray;
+    --darkgray: #222222;
+}
+header{
+    height: 50px;
+    z-index: 100;
+}
+footer{
+    background-color: var(--darkgray);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
 }
 .container{
     width: 90%;
-    margin: 30px auto 100px;
+    margin: auto;
+    min-width: 700px;
 }
 .flex{
     display: flex;
@@ -45,17 +58,19 @@ header div.flex div{
 main div.container.flex{
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
 }
 main div.container .photo{
     width: calc(100% / 7);
     min-width: 125px;
     position: relative;
+    margin-bottom: 5px;
+
 }
 main div.container .photo img{
     width: 100%;
-    padding-right: 5px;
-
+    padding-right: 3px;
 }
 main div.container .photo .text_style{
     background-color: rgba(128, 128, 128, 0.6);
@@ -64,3 +79,30 @@ main div.container .photo .text_style{
     left: 0;
 }
 
+/* barra dei comandi */
+
+footer .command_bar{
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    text-align: center;
+    padding-left: 15px;
+}
+footer .command_bar i{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+footer .command_bar i + div{
+    font-size: 15px;
+}
+footer .command_bar .flex > div{
+    padding-right: 20px;
+}
+footer .command_bar h5{
+    color: red;
+    background-color: darkgrey;
+    line-height: 80px;
+    min-width: 100px;
+    
+}
