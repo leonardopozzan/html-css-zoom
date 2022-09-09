@@ -29,6 +29,10 @@ footer{
     margin: auto;
     min-width: 700px;
 }
+.wrapper{
+    overflow: auto;
+    height: calc(100vh - 130px);
+}
 .flex{
     display: flex;
 }
